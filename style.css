@@ -4,8 +4,10 @@
 
 .nav-item > a:hover {
     color: #ffb800;
-    transform: translateY(-2px);
-    transition: 100ms;
+}
+button {
+    font-weight: 600;
+    padding: 2px !important;
 }
 
 .button-one {
@@ -53,11 +55,26 @@ h1 {
     line-height: 3rem;
     color: white;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 h5 {
     color: white;
 }
+
+h2,
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    color: #d4d4d4;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h6 {
+    color: #bbbbbb;
+}
+
 .heading span {
     color: #ffb800;
     text-decoration: underline;
@@ -65,19 +82,89 @@ h5 {
 }
 .about-page span {
     color: #ffb800;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-decoration: underline;
 }
 .about-page p {
     letter-spacing: 1.5px;
     line-height: 2.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
-.carousel {
-    height: 50vh;
+.img-side {
+    max-height: 25%;
+    max-width: 25%;
 }
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 0.2;
+
+.column {
+    flex: 50%;
+}
+
+.image-shadow {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    border: 0;
+}
+
+.project-background {
+    background-image: url("./images/backg2new.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(50);
+}
+.min-vh-50 {
+    min-height: 50vh;
+}
+.card {
+    margin: 0.2rem;
+    transition: all 0.5s ease;
+    border: 0;
+}
+.card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.75);
+}
+
+.car-image-top {
+    object-fit: cover;
+}
+
+.card-body {
+    position: absolute;
+    max-height: 3rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0.2));
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.card-body > h6,
+p {
+    color: rgb(167, 167, 167);
+}
+
+.card:hover .card-body {
+    max-height: 100%;
+}
+.card:hover .card-img-top {
+    filter: brightness(0.8);
+    transition: filter 0.5s;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1025px) {
+    #about-images {
+        min-height: 100%;
+        min-width: 100%;
+        border-radius: 50%;
+    }
+}
+@media only screen and (max-width: 1280px) {
 }
