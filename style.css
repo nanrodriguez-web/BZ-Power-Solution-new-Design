@@ -112,7 +112,6 @@ h6 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    filter: blur(50);
 }
 .min-vh-50 {
     min-height: 50vh;
