@@ -16,6 +16,13 @@
 
         <!-- Local CSS -->
         <link rel="stylesheet" href="./style.css" />
+
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
         <!-- Nav Bar Start-->
@@ -44,7 +51,7 @@
                 >
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact"
+                            <a class="nav-link" href="#contacts"
                                 ><button
                                     class="button-one p-1 px-2 rounded-pill d-none d-md-block"
                                 >
@@ -81,6 +88,7 @@
             class="container-fluid top-margin min-vh-100 landing-page"
         >
             <div
+                data-aos="fade-in"
                 class="row min-vh-100 d-flex align-items-center px-md-5 mx-md-5"
             >
                 <div class="heading">
@@ -100,12 +108,15 @@
             <div
                 class="row d-flex align-items-center min-vh-100 px-lg-5 mx-lg-5"
             >
-                <div class="col-md-5 text-center text-md-start my-auto py-auto">
+                <div
+                    data-aos="fade-right"
+                    class="col-md-5 text-center text-md-start my-auto py-auto"
+                >
                     <section class="my-auto py-auto">
                         <h3>Make your house</h3>
                         <h2 class="mb-4">BROWNOUT-FREE</h2>
                         <h3 class="mb-3">
-                            Why <span>BZ Power Solution?</span>
+                            Why <span>BZ Power Solution</span>?
                         </h3>
                         <p>
                             From installation to maintenance and beyond, we
@@ -113,12 +124,20 @@
                             your energy needs. Learn more about what we do and
                             how we can help you.
                         </p>
-                        <button class="button-two p-1 mt-2 px-2 rounded-pill">
-                            Get Quote
-                        </button>
+                        <a href="#contacts">
+                            <button
+                                type="button"
+                                class="button-two p-1 mt-2 px-2 rounded-pill"
+                            >
+                                Get Quote
+                            </button>
+                        </a>
                     </section>
                 </div>
-                <div class="col-md-7 d-lg-block text-center">
+                <div
+                    data-aos="fade-left"
+                    class="col-md-7 d-lg-block text-center"
+                >
                     <section
                         class="row d-none d-md-flex flex-row justify-content-center"
                     >
@@ -155,7 +174,7 @@
 
             <div class="row min-vh-50 px-lg-5 mx-lg-5">
                 <div class="col-xl-4 col-md-6 mb-3">
-                    <div class="card">
+                    <div data-aos="fade-in" class="card">
                         <img
                             src="./images/latest/1crop.jpg"
                             class="card-img-top"
@@ -175,7 +194,7 @@
                 </div>
 
                 <div class="col-xl-4 col-md-6 mb-3">
-                    <div class="card">
+                    <div data-aos="fade-in" class="card">
                         <img
                             src="./images/latest/2crop.jpg"
                             class="card-img-top"
@@ -193,7 +212,7 @@
                 </div>
 
                 <div class="col-xl-4 col-md-6 mb-3">
-                    <div class="card">
+                    <div data-aos="fade-in" class="card">
                         <img
                             src="./images/latest/3crop.jpg"
                             class="card-img-top"
@@ -214,7 +233,7 @@
                 </div>
 
                 <div class="col-xl-4 col-md-6 mb-3">
-                    <div class="card">
+                    <div data-aos="fade-in" class="card">
                         <img
                             src="./images/latest/4crop.jpg"
                             class="card-img-top"
@@ -234,7 +253,7 @@
                 </div>
 
                 <div class="col-xl-4 col-md-6 mb-3">
-                    <div class="card">
+                    <div data-aos="fade-in" class="card">
                         <img
                             src="./images/latest/5crop.jpg"
                             class="card-img-top"
@@ -251,7 +270,7 @@
                 </div>
 
                 <div class="col-xl-4 col-md-6 mb-3">
-                    <div class="card">
+                    <div data-aos="fade-in" class="card">
                         <img
                             src="./images/latest/6crop.jpg"
                             class="card-img-top"
@@ -283,7 +302,7 @@
                 <div
                     class="col-md-6 min-vh-100 text-center d-md-flex justify-content-center flex-column"
                 >
-                    <div class="w-75 mx-auto my-5">
+                    <div data-aos="fade-in" class="w-75 mx-auto my-5">
                         <h2>Our Services</h2>
                         <p>
                             BZ Power Solution offers the best solar service that
@@ -291,7 +310,7 @@
                         </p>
                     </div>
                     <div class="d-md-flex justify-content-between text-center">
-                        <div class="w-100">
+                        <div data-aos="fade-up" class="w-100">
                             <img
                                 class="img-services"
                                 src="./icons/solar-panel-solid.svg"
@@ -299,7 +318,7 @@
                             />
                             <p class="m-0">Solar Solutions</p>
                         </div>
-                        <div class="w-100">
+                        <div data-aos="fade-up" class="w-100">
                             <img
                                 class="img-services"
                                 src="./icons/creative-commons-zero.svg"
@@ -310,7 +329,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="w-100">
+                    <div data-aos="fade-up" class="w-100">
                         <img
                             class="img-services"
                             src="./icons/peso-sign-solid.svg"
@@ -339,13 +358,9 @@
                                 placeholder="Full Name"
                                 required
                             />
-                            <input type="text" placeholder="Address" required />
-                            <input type="email" placeholder="Email" required />
-                            <input
-                                type="number"
-                                placeholder="Contact Number"
-                                required
-                            />
+                            <input type="text" placeholder="Address" />
+                            <input type="email" placeholder="Email" />
+                            <input type="number" placeholder="Contact Number" />
                             <textarea
                                 name=""
                                 id=""
@@ -354,7 +369,6 @@
                                 placeholder="Message"
                             ></textarea>
                             <button
-                                c
                                 type="submit"
                                 class="button-two mx-auto p-1 mt-2 px-2 rounded-pill w-50 text-center"
                             >
@@ -442,6 +456,19 @@
                 }
                 prevScrollpos = currentScrollPos;
             };
+        </script>
+
+        <!-- Animation on Scroll -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <!-- Modal -->
+        <script>
+            $("#myModal").on("shown.bs.modal", function () {
+                $("#myInput").trigger("focus");
+            });
         </script>
     </body>
 </html>
